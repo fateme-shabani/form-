@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Product from "./components/Product";
+import Form from "./components/Form";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       <div className="product-style">
+      <Form />
         {products.map((item) => {
           return <Product key={item.id} products={item} />;
         })}

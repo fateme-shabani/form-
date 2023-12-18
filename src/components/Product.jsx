@@ -22,7 +22,7 @@ const Product = ({ products }) => {
           <label>{priceCounter}</label>
           <button onClick={decHandler}>-</button>
         </div>
-        <h3>{totalPrice}</h3>
+        <h3>{totalPrice === 0 ? "" : totalPrice}</h3>
       </div>
     </>
   );
