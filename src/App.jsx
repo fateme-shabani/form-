@@ -17,7 +17,7 @@ function App() {
   //   { id: 4, name: " ایرپاد شیائومی", price: 8000 },
   // ];
   const addItemToList = (item) => {
-    setproducts(...products, item);
+    setproducts([...products, item]);
   };
 
   return (

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-const Form = (props) => {
+const Form = ({addItemToList}) => {
   const [formData, setformData] = useState({ name: "", price: 0 });
 
   const formHandler = (e) => {
     e.preventDefault()
     console.log(formData)
-    props.addItemToList(formData)
+    addItemToList(formData)
     };
 
   const nameHandler = (e) => {
@@ -19,8 +19,8 @@ const Form = (props) => {
     <>
       <div>
         <form action="#" onSubmit={formHandler}>
-          <input type="text" onChange={nameHandler} className="test"></input>
-          <input type="number" onChange={priceHandler} className="test"></input>
+          <input type="text" onChange={nameHandler} className="input-style"></input>
+          <input type="number" onChange={priceHandler} className="input-style"></input>
           <button>add</button>
         </form>
       </div>
