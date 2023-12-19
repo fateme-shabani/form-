@@ -22,13 +22,13 @@ const Form = ({ addItemToList }) => {
         <form action="#" onSubmit={formHandler}>
           <input
             type="text"
-            onBlur={nameHandler}
+            onChange={nameHandler}
             value={formData.name}
             className="input-style"
           ></input>
           <input
             type="number"
-            onBlur={priceHandler}
+            onChange={priceHandler}
             value={formData.price}
             className="input-style"
           ></input>
